@@ -1,0 +1,1320 @@
+/Users/danu/opt/anaconda3/bin/python /Users/danu/Desktop/NLP/sound_matching/test.py
+time to run 0:00:22.465728 for word |||   Авдей    |||IPA avˈdʲɛj
+time to sort 0:00:00.016464 for word |||   Авдей    |||IPA avˈdʲɛj
+time to run 0:00:04.514275 for word |||   Алла    |||IPA А́лла
+time to sort 0:00:00.012045 for word |||   Алла    |||IPA А́лла
+time to run 0:00:22.557255 for word |||   порез    |||IPA pɐˈrʲes
+time to sort 0:00:00.014486 for word |||   порез    |||IPA pɐˈrʲes
+time to run 0:00:04.151188 for word |||   узус    |||IPA ˈ
+time to sort 0:00:00.011702 for word |||   узус    |||IPA ˈ
+time to run 0:00:22.483009 for word |||   уксус    |||IPA ˈuksʊs
+time to sort 0:00:00.014608 for word |||   уксус    |||IPA ˈuksʊs
+time to run 0:00:26.132829 for word |||   дерево    |||IPA ˈdʲerʲɪvə
+time to sort 0:00:00.015519 for word |||   дерево    |||IPA ˈdʲerʲɪvə
+time to run 0:00:37.000578 for word |||   Александр    |||IPA ɐlʲɪˈksandr
+time to sort 0:00:00.014943 for word |||   Александр    |||IPA ɐlʲɪˈksandr
+
+
+source_word:   Авдей
+matches
+              ipa  distance
+orig                      
+estai     ɛˈstej     3.250
+iptay     ɪˈptej     3.625
+abdo      æˈbdow     4.375
+alday     æˈldej     4.500
+avdel    æˈvdɛˌl     4.625
+avco      æˈvkow     4.625
+jafco    ʤæˈfkow     4.875
+altai     æltajˈ     5.250
+astore    æˈstɔɹ     5.375
+astaire   ʌstɛˈɹ     5.375
+
+
+source_word:   Алла
+matches
+            ipa  distance
+orig                    
+gurr       gɚˈ       0.0
+gertsch   gɚˈʧ       0.0
+err(1)      ɚˈ       0.0
+urge       ɚˈʤ       0.0
+jerr       ʤɚˈ       0.0
+church    ʧɚˈʧ       0.0
+jerger   ʤɚˈgɚ       0.0
+eure        ɚˈ       0.0
+are(1)       ɚ       0.0
+er           ɚ       0.0
+
+
+source_word:   порез
+matches
+                    ipa  distance
+orig                            
+police          pʌliˈs      2.00
+herbalists(2)  ɚˈbʌlʌs      2.25
+perales        pɚɑˈlɛs      2.50
+bulges         bʌˈlʤɪz      2.75
+palash          pʌlæˈʃ      2.75
+paulus          pɔˈlʌs      2.75
+peralez        pɚɑˈlɛz      2.75
+polly's         pɑˈliz      3.00
+palace          pæˈlʌs      3.00
+belous          bɛˈlʌs      3.00
+
+
+source_word:   узус
+matches
+           ipa  distance
+orig                   
+gurr      gɚˈ       0.0
+ur         ɚˈ       0.0
+are(1)      ɚ       0.0
+urge      ɚˈʤ       0.0
+er          ɚ       0.0
+jerger  ʤɚˈgɚ       0.0
+church   ʧɚˈʧ       0.0
+gerger  gɚˈgɚ       0.0
+err(1)     ɚˈ       0.0
+eure       ɚˈ       0.0
+
+
+source_word:   уксус
+matches
+                ipa  distance
+orig                        
+excess(1)   ɪksɛˈs      3.25
+x.s         ɛˈksɪz      3.50
+exes        ɛˈksɪz      3.50
+x.'s        ɛˈksɪz      3.50
+x's         ɛˈksɪz      3.50
+axes        æˈksɪz      3.75
+axis        æˈksʌs      3.75
+excess     ɛˈksɛˌs      3.75
+axes(1)     æˈksiz      4.00
+access     æˈksɛˌs      4.00
+
+
+source_word:   дерево
+matches
+                 ipa  distance
+orig                         
+delivery   dɪlɪˈvɚi     4.000
+talitha     tæˈlɪðʌ     4.250
+delisa      dɛliˈsʌ     4.250
+khalifa     kʌliˈfʌ     4.625
+delisi      dɛliˈsi     5.250
+talese(1)   tʌliˈzi     5.500
+silesia     sɪliˈzʌ     5.750
+d'alessi    dʌlɛˈsi     5.750
+delozier   dɛˈlʌziɚ     6.000
+saliba      sɑliˈbʌ     6.125
+
+
+source_word:   Александр
+matches
+                          ipa  distance
+orig                                  
+alexandre         ælɪksɑˈndɚ     9.500
+aleksander       æˌlʌksæˈndɚ    10.000
+aleksandr        æˌlʌksæˈndɚ    10.000
+assistants        ʌsɪˈstʌnts    11.875
+alexander's(1)  æˌlɪgzæˈndɚz    12.000
+alexanders      æˌlɪgzæˈndɚz    12.000
+election's         ɪlɛˈkʃʌnz    12.250
+elections          ɪlɛˈkʃʌnz    12.250
+alexander's     æˌlʌgzæˈndɚz    13.250
+ericsson's         ɛˈɹɪksʌnz    13.500
+time to run 0:00:14.951297 for word |||   femme    |||IPA fam
+time to sort 0:00:00.015290 for word |||   femme    |||IPA fam
+time to run 0:00:11.375740 for word |||   homme    |||IPA ɔm
+time to sort 0:00:00.013351 for word |||   homme    |||IPA ɔm
+time to run 0:00:14.989285 for word |||   ami    |||IPA ami
+time to sort 0:00:00.014490 for word |||   ami    |||IPA ami
+time to run 0:00:18.744183 for word |||   maison    |||IPA mɛzɔ̃
+time to sort 0:00:00.013933 for word |||   maison    |||IPA mɛzɔ̃
+time to run 0:00:15.120331 for word |||   monde    |||IPA mɔ̃d
+time to sort 0:00:00.013843 for word |||   monde    |||IPA mɔ̃d
+time to run 0:00:25.940359 for word |||   travail    |||IPA tʁavaj
+time to sort 0:00:00.014666 for word |||   travail    |||IPA tʁavaj
+time to run 0:00:18.703261 for word |||   école    |||IPA ekɔl
+time to sort 0:00:00.015357 for word |||   école    |||IPA ekɔl
+time to run 0:00:25.986823 for word |||   voyage    |||IPA vwajaʒ
+time to sort 0:00:00.015326 for word |||   voyage    |||IPA vwajaʒ
+time to run 0:00:18.802427 for word |||   livre    |||IPA livʁ
+time to sort 0:00:00.014923 for word |||   livre    |||IPA livʁ
+time to run 0:00:26.170869 for word |||   lumière    |||IPA lymjɛʁ
+time to sort 0:00:00.014762 for word |||   lumière    |||IPA lymjɛʁ
+time to run 0:00:18.834641 for word |||   phrase    |||IPA fʁaz
+time to sort 0:00:00.014791 for word |||   phrase    |||IPA fʁaz
+
+
+source_word:   femme
+matches
+             ipa  distance
+orig                     
+pham       fæˈm     0.000
+femme      fɛˈm     0.750
+femur     fiˈmɚ     1.000
+fan        fæˈn     1.125
+phan       fæˈn     1.125
+pam        pæˈm     1.125
+fann       fæˈn     1.125
+fancher  fæˈnʧɚ     1.125
+tham       θæˈm     1.250
+sam        sæˈm     1.250
+
+
+source_word:   homme
+matches
+          ipa  distance
+orig                  
+gmbh     gʌm      0.75
+chum    ʧʌˈm      0.75
+um       ʌˈm      0.75
+i'm(1)    ʌm      0.75
+gum     gʌˈm      0.75
+gumm    gʌˈm      0.75
+umm      ʌˈm      0.75
+gehm    ʤɛˈm      1.00
+em       ɛˈm      1.00
+emch    ɛˈmʧ      1.00
+
+
+source_word:   ami
+matches
+             ipa  distance
+orig                     
+amie       æˈmi      0.00
+amery     æˈmɚi      0.00
+gamage   gæˈmɪʤ      0.25
+gammage  gæˈmɪʤ      0.25
+emmy       ɛˈmi      0.75
+ami        ɑˈmi      0.75
+jemie     ʤɛˈmi      0.75
+emery     ɛˈmɚi      0.75
+emory     ɛˈmɚi      0.75
+emmi       ɛˈmi      0.75
+
+
+source_word:   maison
+matches
+                  ipa  distance
+orig                          
+meza           mɛˈzʌ      1.25
+meddaugh       mɛˈdɔ      1.50
+messa          mɛˈsʌ      1.50
+message       mɛˈsʌʤ      1.50
+middaugh       mɪˈdɔ      2.00
+misjudge     mɪsʤʌˈʤ      2.00
+misa           miˈzʌ      2.00
+mazza          mæˈzʌ      2.00
+missouri(1)   mʌzɚˈʌ      2.00
+message(1)    mɛˈsɪʤ      2.25
+
+
+source_word:   monde
+matches
+              ipa  distance
+orig                      
+maraud     mɚɔˈd      0.50
+maud        mɔˈd      0.50
+maude       mɔˈd      0.50
+marauder  mɚɔˈdɚ      0.50
+mod         mɔˈd      0.50
+marotte    mɚɔˈt      0.75
+maute       mɔˈt      0.75
+mud         mʌˈd      1.25
+mudd        mʌˈd      1.25
+mugged     mʌˈgd      1.25
+
+
+source_word:   travail
+matches
+                   ipa  distance
+orig                           
+certify     sɚˈtʌfajˌ     5.125
+scavo         skɑˈvow     6.500
+persevere    pɚsʌvɪˈɹ     7.375
+spavo         spɑˈvow     7.500
+csaszar      tsɑˌʃɑˈɹ     7.500
+skibo(1)      skiˈbow     7.875
+berkemeier  bɚˈkɪmajɚ     8.000
+stegmaier   stɛˈgmajɚ     8.250
+spasso        spæˈsow     8.250
+stupay        stupejˈ     8.250
+
+
+source_word:   école
+matches
+             ipa  distance
+orig                     
+eckl      ɛˈkʌl      1.00
+jekel    ʤɛˈkʌl      1.00
+eckel     ɛˈkʌl      1.00
+jekyll   ʤɛˈkʌl      1.00
+eckerle  ɛˈkɚʌl      1.00
+jackel   ʤæˈkʌl      1.25
+jackal   ʤæˈkʌl      1.25
+eakle     iˈkʌl      1.25
+chuckle  ʧʌˈkʌl      1.25
+jakel    ʤæˈkʌl      1.25
+
+
+source_word:   voyage
+matches
+                   ipa  distance
+orig                           
+triad        tɹajˈæˌd     5.875
+suarez        swɑɹɛˈz     5.875
+quieter      kwajˈʌtɚ     6.375
+quiet         kwajˈʌt     6.375
+prowess       pɹawˈʌs     6.500
+whereas(1)    hwɛɹæˈz     7.000
+shryock       ʃɹajˈɑk     7.250
+progress    pɹɑˈgɹɛˌs     7.625
+prairie's     pɹɛˈɹiz     7.625
+juarez(1)    hwɑˈɹɛˌz     7.750
+
+
+source_word:   livre
+matches
+              ipa  distance
+orig                      
+gleaves   gliˈvz     1.625
+leaves     liˈvz     1.625
+leaver's  liˈvɚz     1.625
+livers    lɪˈvɚz     1.875
+lives      lɪˈvz     1.875
+leafs      liˈfs     2.125
+liffe's    lɪˈfs     2.375
+levers    lɛˈvɚz     2.375
+luvs       lʌˈvz     2.625
+gloves    glʌˈvz     2.625
+
+
+source_word:   lumière
+matches
+                ipa  distance
+orig                        
+linwick   lɪˈnwɪˌk     6.125
+soonyi's  suˌnjiˈz     6.750
+lenius     liˈniɪs     6.875
+languish  læˈŋgwɪʃ     7.375
+landgraf  læˈnʤɹʌf     7.875
+lengyel   lɛˈŋjɛˌl     7.875
+limbless   lɪˈmlʌs     8.000
+linwood   lɪˈnwʊˌd     8.000
+hemric     hɛˈmɹɪk     8.000
+hemrick    hɛˈmɹɪk     8.000
+
+
+source_word:   phrase
+matches
+               ipa  distance
+orig                       
+furches    fɚʃiˈz     2.375
+skaggs     skæˈgz     3.000
+scags      skæˈgz     3.000
+scaggs     skæˈgz     3.000
+versus(1)  vɚˈsʌz     3.125
+forgette   fɚʒɛˈt     3.125
+vs         vɚˈsʌz     3.125
+verses     vɚˈsʌz     3.125
+firkus     fɚˈkɪs     3.250
+versus     vɚˈsʌs     3.375
+
+
+
+feature_edit_distance
+
+
+
+time to run 0:00:36.235305 for word |||   Авдей    |||IPA avˈdʲɛj
+time to sort 0:00:00.015298 for word |||   Авдей    |||IPA avˈdʲɛj
+time to run 0:00:05.661604 for word |||   Алла    |||IPA А́лла
+time to sort 0:00:00.012180 for word |||   Алла    |||IPA А́лла
+time to run 0:00:36.246116 for word |||   порез    |||IPA pɐˈrʲes
+time to sort 0:00:00.013854 for word |||   порез    |||IPA pɐˈrʲes
+time to run 0:00:05.366428 for word |||   узус    |||IPA ˈ
+time to sort 0:00:00.012078 for word |||   узус    |||IPA ˈ
+time to run 0:00:36.223820 for word |||   уксус    |||IPA ˈuksʊs
+time to sort 0:00:00.015263 for word |||   уксус    |||IPA ˈuksʊs
+time to run 0:00:42.560942 for word |||   дерево    |||IPA ˈdʲerʲɪvə
+time to sort 0:00:00.014562 for word |||   дерево    |||IPA ˈdʲerʲɪvə
+time to run 0:01:00.335140 for word |||   Александр    |||IPA ɐlʲɪˈksandr
+time to sort 0:00:00.014854 for word |||   Александр    |||IPA ɐlʲɪˈksandr
+
+
+source_word:   Авдей
+matches
+               ipa  distance
+orig                       
+avdel     æˈvdɛˌl  0.270833
+alday      æˈldej  0.291667
+jaffray   ʤæˈfɹej  0.291667
+abdel     æˈbdɛˌl  0.333333
+everding  ɛˈvɚdɪŋ  0.333333
+abdo       æˈbdow  0.354167
+iptay      ɪˈptej  0.354167
+amboy      æˈmbɔj  0.375000
+estai      ɛˈstej  0.375000
+averting  ʌvɚˈtɪŋ  0.375000
+
+
+source_word:   Алла
+matches
+            ipa  distance
+orig                    
+jerger   ʤɚˈgɚ       0.0
+or(1)        ɚ       0.0
+gertsch   gɚˈʧ       0.0
+church    ʧɚˈʧ       0.0
+ur          ɚˈ       0.0
+gurr       gɚˈ       0.0
+err(1)      ɚˈ       0.0
+jerr       ʤɚˈ       0.0
+are(1)       ɚ       0.0
+eure        ɚˈ       0.0
+
+
+source_word:   порез
+matches
+                    ipa  distance
+orig                            
+possess         pʌzɛˈs  0.166667
+possessor      pʌzɛˈsɚ  0.166667
+police          pʌliˈs  0.166667
+herbalists(2)  ɚˈbʌlʌs  0.208333
+falise          fʌliˈs  0.229167
+felice          fʌliˈs  0.229167
+perales        pɚɑˈlɛs  0.229167
+politte         pʌlɪˈt  0.250000
+palace          pæˈlʌs  0.250000
+buzzy's         bʌˈziz  0.250000
+
+
+source_word:   узус
+matches
+           ipa  distance
+orig                   
+urge      ɚˈʤ       0.0
+gertsch  gɚˈʧ       0.0
+or(1)       ɚ       0.0
+church   ʧɚˈʧ       0.0
+ur         ɚˈ       0.0
+gurr      gɚˈ       0.0
+err(1)     ɚˈ       0.0
+er          ɚ       0.0
+jerr      ʤɚˈ       0.0
+are(1)      ɚ       0.0
+
+
+source_word:   уксус
+matches
+                 ipa  distance
+orig                         
+excess(1)    ɪksɛˈs  0.291667
+worksheet  wɚˈkʃiˌt  0.333333
+x.'s         ɛˈksɪz  0.333333
+x's          ɛˈksɪz  0.333333
+exeter      ɛˈksɪtɚ  0.333333
+axis         æˈksʌs  0.333333
+axes         æˈksɪz  0.333333
+x.s          ɛˈksɪz  0.333333
+access      æˈksɛˌs  0.333333
+exes         ɛˈksɪz  0.333333
+
+
+source_word:   дерево
+matches
+                 ipa  distance
+orig                         
+knezevich  nɛˈzɪvɪʧ  0.375000
+delivery   dɪlɪˈvɚi  0.375000
+talitha     tæˈlɪðʌ  0.416667
+delima      dɛliˈmʌ  0.437500
+delisa      dɛliˈsʌ  0.458333
+sedivy      sɛˈdɪvi  0.458333
+defibaugh  dɛˈfɪbɔˌ  0.479167
+khalifa     kʌliˈfʌ  0.479167
+dilemma     dɪlɛˈmʌ  0.479167
+nalepa      nʌliˈpʌ  0.479167
+
+
+source_word:   Александр
+matches
+                         ipa  distance
+orig                                 
+assistants       ʌsɪˈstʌnts  0.729167
+quicksands      kwɪˈksæˌndz  0.729167
+electioneer     ɪlɛˌkʃʌnɪˈɹ  0.854167
+alibrandi       æˌlɪbɹæˈndi  0.854167
+understands    ʌˌndɚstæˈndz  0.875000
+assailant's      ʌsejˈlʌnts  0.875000
+assailants       ʌsejˈlʌnts  0.875000
+ellipsoids       ɪlɪˈpsɔjdz  0.895833
+flatlands        flæˈtlændz  0.916667
+enactments(1)   ɛˌnæˈkmʌnts  0.937500
+time to run 0:00:23.605599 for word |||   femme    |||IPA fam
+time to sort 0:00:00.015160 for word |||   femme    |||IPA fam
+time to run 0:00:17.516214 for word |||   homme    |||IPA ɔm
+time to sort 0:00:00.013077 for word |||   homme    |||IPA ɔm
+time to run 0:00:23.532427 for word |||   ami    |||IPA ami
+time to sort 0:00:00.013022 for word |||   ami    |||IPA ami
+time to run 0:00:30.017800 for word |||   maison    |||IPA mɛzɔ̃
+time to sort 0:00:00.013480 for word |||   maison    |||IPA mɛzɔ̃
+time to run 0:00:23.791342 for word |||   monde    |||IPA mɔ̃d
+time to sort 0:00:00.013892 for word |||   monde    |||IPA mɔ̃d
+time to run 0:00:42.188884 for word |||   travail    |||IPA tʁavaj
+time to sort 0:00:00.014260 for word |||   travail    |||IPA tʁavaj
+time to run 0:00:29.654814 for word |||   école    |||IPA ekɔl
+time to sort 0:00:00.014304 for word |||   école    |||IPA ekɔl
+time to run 0:00:41.982603 for word |||   voyage    |||IPA vwajaʒ
+time to sort 0:00:00.014184 for word |||   voyage    |||IPA vwajaʒ
+time to run 0:00:29.698955 for word |||   livre    |||IPA livʁ
+time to sort 0:00:00.014125 for word |||   livre    |||IPA livʁ
+time to run 0:00:41.824792 for word |||   lumière    |||IPA lymjɛʁ
+time to sort 0:00:00.014050 for word |||   lumière    |||IPA lymjɛʁ
+time to run 0:00:29.704114 for word |||   phrase    |||IPA fʁaz
+time to sort 0:00:00.014528 for word |||   phrase    |||IPA fʁaz
+
+
+source_word:   femme
+matches
+             ipa  distance
+orig                     
+pham       fæˈm  0.000000
+pam        pæˈm  0.062500
+faberge  fæˈbɚʤ  0.083333
+fab        fæˈb  0.083333
+femur     fiˈmɚ  0.083333
+femme      fɛˈm  0.083333
+fancher  fæˈnʧɚ  0.104167
+fan        fæˈn  0.104167
+bahm       bæˈm  0.104167
+phan       fæˈn  0.104167
+
+
+source_word:   homme
+matches
+           ipa  distance
+orig                   
+umm       ʌˈm  0.083333
+m.        ɛˈm  0.083333
+gemme    ʤɛˈm  0.083333
+chum     ʧʌˈm  0.083333
+gemmer  gɛˈmɚ  0.083333
+um        ʌˈm  0.083333
+gem      ʤɛˈm  0.083333
+emmer    ɛˈmɚ  0.083333
+emge     ɛˈmʤ  0.083333
+gum      gʌˈm  0.083333
+
+
+source_word:   ami
+matches
+             ipa  distance
+orig                     
+amery     æˈmɚi  0.000000
+amie       æˈmi  0.000000
+gammage  gæˈmɪʤ  0.041667
+gamage   gæˈmɪʤ  0.041667
+cerami   ʧɚɑˈmi  0.062500
+ami        ɑˈmi  0.062500
+abbey      æˈbi  0.083333
+gummy     gʌˈmi  0.083333
+emery     ɛˈmɚi  0.083333
+emmie      ɛˈmi  0.083333
+
+
+source_word:   maison
+matches
+                  ipa  distance
+orig                          
+meddaugh       mɛˈdɔ  0.083333
+middaugh       mɪˈdɔ  0.125000
+meza           mɛˈzʌ  0.125000
+message       mɛˈsʌʤ  0.166667
+messa          mɛˈsʌ  0.166667
+message(1)    mɛˈsɪʤ  0.208333
+marella       mɚɛˈlʌ  0.208333
+misjudge     mɪsʤʌˈʤ  0.208333
+missouri(1)   mʌzɚˈʌ  0.208333
+mehta          mɛˈtʌ  0.208333
+
+
+source_word:   monde
+matches
+              ipa  distance
+orig                      
+marauder  mɚɔˈdɚ  0.041667
+maraud     mɚɔˈd  0.041667
+maude       mɔˈd  0.041667
+maud        mɔˈd  0.041667
+mod         mɔˈd  0.041667
+marotte    mɚɔˈt  0.083333
+maus        mɔˈz  0.083333
+maute       mɔˈt  0.083333
+moss        mɔˈs  0.125000
+mauthe      mɔˈð  0.125000
+
+
+source_word:   travail
+matches
+                   ipa  distance
+orig                           
+certify     sɚˈtʌfajˌ  0.395833
+deify        diˈʌfajˌ  0.416667
+scavo         skɑˈvow  0.479167
+stegmaier   stɛˈgmajɚ  0.500000
+scavenger   skæˈvʌnʤɚ  0.520833
+scavenge     skæˈvʌnʤ  0.520833
+scovill       skɑˈvʌl  0.541667
+scovell       skɑˈvʌl  0.541667
+naify        nejˈfajˌ  0.541667
+berkemeier  bɚˈkɪmajɚ  0.541667
+
+
+source_word:   école
+matches
+             ipa  distance
+orig                     
+eakle     iˈkʌl     0.125
+eckl      ɛˈkʌl     0.125
+akel      ʌkɛˈl     0.125
+chuckle  ʧʌˈkʌl     0.125
+eckerle  ɛˈkɚʌl     0.125
+jakel    ʤæˈkʌl     0.125
+jekyll   ʤɛˈkʌl     0.125
+jackal   ʤæˈkʌl     0.125
+jekel    ʤɛˈkʌl     0.125
+jackel   ʤæˈkʌl     0.125
+
+
+source_word:   voyage
+matches
+                 ipa  distance
+orig                         
+gyi(1)   ʤiˈwajˈajˈ  0.458333
+triad      tɹajˈæˌd  0.479167
+brian       bɹajˈʌn  0.500000
+bryon       bɹajˈʌn  0.500000
+brion       bɹajˈʌn  0.500000
+bryen       bɹajˈʌn  0.500000
+bryan       bɹajˈʌn  0.500000
+priam      pɹajˈæˌm  0.520833
+quiet       kwajˈʌt  0.520833
+quieter    kwajˈʌtɚ  0.520833
+
+
+source_word:   livre
+matches
+              ipa  distance
+orig                      
+leaves     liˈvz  0.145833
+leaver's  liˈvɚz  0.145833
+gleaves   gliˈvz  0.145833
+leiva      liˈvʌ  0.166667
+livers    lɪˈvɚz  0.187500
+lives      lɪˈvz  0.187500
+leafs      liˈfs  0.229167
+lived(1)   lɪˈvd  0.229167
+gleba     gliˈbʌ  0.229167
+loves      lʌˈvz  0.229167
+
+
+source_word:   lumière
+matches
+                  ipa  distance
+orig                          
+soonyi's    suˌnjiˈz  0.500000
+lenius       liˈniɪs  0.500000
+libya's      lɪˈbiʌz  0.520833
+linwick     lɪˈnwɪˌk  0.520833
+louviere     luˈviɛɹ  0.541667
+lawmaker   lɔˈmejˌkɚ  0.541667
+labrecque    lʌbɹɛˈk  0.562500
+cbs        siˈbiˌɛˌs  0.562500
+lengyel     lɛˈŋjɛˌl  0.562500
+lumina       luˈmɪnʌ  0.562500
+
+
+source_word:   phrase
+matches
+              ipa  distance
+orig                      
+forbad    fɚbæˈd  0.208333
+flags     flæˈgz  0.229167
+furches   fɚʃiˈz  0.229167
+skaggs    skæˈgz  0.250000
+scaggs    skæˈgz  0.250000
+scags     skæˈgz  0.250000
+forgette  fɚʒɛˈt  0.270833
+flad       flæˈd  0.270833
+flagged   flæˈgd  0.270833
+fervid    fɚˈvʌd  0.270833
+
+
+
+fast_levenshtein_distance
+
+
+
+time to run 0:00:00.789615 for word |||   Авдей    |||IPA avˈdʲɛj
+time to sort 0:00:00.012369 for word |||   Авдей    |||IPA avˈdʲɛj
+time to run 0:00:00.795685 for word |||   Алла    |||IPA А́лла
+time to sort 0:00:00.009716 for word |||   Алла    |||IPA А́лла
+time to run 0:00:00.820007 for word |||   порез    |||IPA pɐˈrʲes
+time to sort 0:00:00.009964 for word |||   порез    |||IPA pɐˈrʲes
+time to run 0:00:00.747654 for word |||   узус    |||IPA ˈ
+time to sort 0:00:00.008354 for word |||   узус    |||IPA ˈ
+time to run 0:00:00.807024 for word |||   уксус    |||IPA ˈuksʊs
+time to sort 0:00:00.010151 for word |||   уксус    |||IPA ˈuksʊs
+time to run 0:00:00.841097 for word |||   дерево    |||IPA ˈdʲerʲɪvə
+time to sort 0:00:00.009515 for word |||   дерево    |||IPA ˈdʲerʲɪvə
+time to run 0:00:00.845225 for word |||   Александр    |||IPA ɐlʲɪˈksandr
+time to sort 0:00:00.009795 for word |||   Александр    |||IPA ɐlʲɪˈksandr
+
+
+source_word:   Авдей
+matches
+                ipa  distance
+orig                        
+eid           ajˈd         4
+idol        ajˈdʌl         4
+ide           ajˈd         4
+eidem       ajˈdɪm         4
+idly        ajˈdli         4
+oded        owˈdɛd         4
+dudeck      duˈdɛk         4
+eiden       ajˈdʌn         4
+idling(1)  ajˈdlɪŋ         4
+audi(1)      awˈdi         4
+
+
+source_word:   Алла
+matches
+           ipa  distance
+orig                   
+eid      ajˈd         5
+bietz   biˈts         5
+bieser  biˈsɚ         5
+bies    bajˈz         5
+biery   bɪˈɹi         5
+bitchy  bɪˈʧi         5
+bite    bajˈt         5
+too       tuˈ         5
+toohey   tuˈi         5
+took     tʊˈk         5
+
+
+source_word:   порез
+matches
+             ipa  distance
+orig                     
+parkes   pɑˈɹks         4
+perce      pɚˈs         4
+parts'   pɑˈɹts         4
+parts    pɑˈɹts         4
+part's   pɑˈɹts         4
+percs     pɚˈks         4
+pac's     pæˈks         4
+peace      piˈs         4
+portis  pɔˈɹtɪs         4
+paltz    pɔˈlts         4
+
+
+source_word:   узус
+matches
+      ipa  distance
+orig              
+ah    ɑˈ         1
+ur    ɚˈ         1
+uhh   ʌˈ         1
+awe   ɑˈ         1
+ahh   ɑˈ         1
+er     ɚ         1
+eh    ɛˈ         1
+oooh  uˈ         1
+ee    iˈ         1
+ooh   uˈ         1
+
+
+source_word:   уксус
+matches
+             ipa  distance
+orig                     
+axis     æˈksʌs         3
+boosts   buˈsts         3
+lucie     luˈsi         4
+moots     muˈts         4
+tusing   tuˈsɪŋ         4
+joosten  juˈsʌn         4
+fests    fɛˈsts         4
+husar     huˈsɚ         4
+mootz     muˈts         4
+use        juˈs         4
+
+
+source_word:   дерево
+matches
+                   ipa  distance
+orig                           
+derisive      dɚɪˈsɪv         6
+deneve         dɛˈnɪv         6
+additive(1)   æˈdɪtɪv         6
+adaptive     ʌdæˈptɪv         6
+adhesive     ædhiˈsɪv         6
+deva           dejˈvʌ         6
+adoptive     ʌdɑˈptɪv         6
+adhesive(1)  ʌdhiˈsɪv         6
+daves          dejˈvz         6
+davey          dejˈvi         6
+
+
+source_word:   Александр
+matches
+                       ipa  distance
+orig                               
+licklider       lɪˈklajdɚ         5
+listened          lɪˈsʌnd         5
+glistened        glɪˈsʌnd         5
+glistening(1)    glɪˈsnɪŋ         6
+wiklund          wɪˈklʌnd         6
+glickman         glɪˈkmʌn         6
+strickland     stɹɪˈklʌnd         6
+ligand            lɪˈgʌnd         6
+christened       kɹɪˈsʌnd         6
+mixner            mɪˈksnɚ         6
+time to run 0:00:00.748630 for word |||   femme    |||IPA fam
+time to sort 0:00:00.010119 for word |||   femme    |||IPA fam
+time to run 0:00:00.752414 for word |||   homme    |||IPA ɔm
+time to sort 0:00:00.009478 for word |||   homme    |||IPA ɔm
+time to run 0:00:00.752718 for word |||   ami    |||IPA ami
+time to sort 0:00:00.009147 for word |||   ami    |||IPA ami
+time to run 0:00:00.794233 for word |||   maison    |||IPA mɛzɔ̃
+time to sort 0:00:00.009570 for word |||   maison    |||IPA mɛzɔ̃
+time to run 0:00:00.783956 for word |||   monde    |||IPA mɔ̃d
+time to sort 0:00:00.009751 for word |||   monde    |||IPA mɔ̃d
+time to run 0:00:00.780429 for word |||   travail    |||IPA tʁavaj
+time to sort 0:00:00.008987 for word |||   travail    |||IPA tʁavaj
+time to run 0:00:00.775081 for word |||   école    |||IPA ekɔl
+time to sort 0:00:00.009690 for word |||   école    |||IPA ekɔl
+time to run 0:00:00.786199 for word |||   voyage    |||IPA vwajaʒ
+time to sort 0:00:00.009623 for word |||   voyage    |||IPA vwajaʒ
+time to run 0:00:00.777320 for word |||   livre    |||IPA livʁ
+time to sort 0:00:00.009687 for word |||   livre    |||IPA livʁ
+time to run 0:00:00.796797 for word |||   lumière    |||IPA lymjɛʁ
+time to sort 0:00:00.009020 for word |||   lumière    |||IPA lymjɛʁ
+time to run 0:00:00.778197 for word |||   phrase    |||IPA fʁaz
+time to sort 0:00:00.009653 for word |||   phrase    |||IPA fʁaz
+
+
+source_word:   femme
+matches
+           ipa  distance
+orig                   
+from(1)   fɚm         1
+faw       fɔˈ         2
+phu       fuˈ         2
+fi(1)     fiˈ         2
+foo       fuˈ         2
+emme      ɛˈm         2
+furrh     fɚˈ         2
+fi       fajˈ         2
+him(1)     ɪm         2
+furr      fɚˈ         2
+
+
+source_word:   homme
+matches
+          ipa  distance
+orig                  
+aw        ɔˈ         1
+i'm(1)    ʌm         1
+awe(1)    ɔˈ         1
+him(1)    ɪm         1
+from(1)  fɚm         2
+chaw     ʧɔˈ         2
+to(2)     tʌ         2
+hors(1)  ɔˌɹ         2
+yaw      jɔˈ         2
+le        lʌ         2
+
+
+source_word:   ami
+matches
+          ipa  distance
+orig                  
+ow(1)    awˈ         2
+mea      miˈ         2
+smee    smiˈ         2
+iie      iˈi         2
+emmi    ɛˈmi         2
+mi       miˈ         2
+me       miˈ         2
+almy    ɔˈmi         2
+sui(1)   swi         2
+i.       ajˈ         2
+
+
+source_word:   maison
+matches
+            ipa  distance
+orig                    
+mehler   mɛˈlɚ         3
+menke    mɛˈŋk         3
+mega     mɛˈgʌ         3
+melly    mɛˈli         3
+mech      mɛˈk         3
+meche     mɛˈʧ         3
+meg       mɛˈg         3
+mellie   mɛˈli         3
+menge    mɛˈnʤ         3
+mouzon  muzɔˈn         3
+
+
+source_word:   monde
+matches
+           ipa  distance
+orig                   
+mod      mɔˈd         1
+maud     mɔˈd         1
+maude    mɔˈd         1
+maraud  mɚɔˈd         2
+mauss    mɔˈs         2
+maus     mɔˈz         2
+maung    mɔˈŋ         2
+maule    mɔˈl         2
+maull    mɔˈl         2
+maune    mɔˈn         2
+
+
+source_word:   travail
+matches
+              ipa  distance
+orig                      
+levi      liˈvaj         3
+tomei     tɑˈmaj         3
+taddei    tæˈdaj         3
+tighe      tajˈg         4
+tao         tawˈ         4
+herve(1)  hɚˈvej         4
+tile       tajˈl         4
+taub       tawˈb         4
+ely        iˈlaj         4
+tevis     tɛˈvɪs         4
+
+
+source_word:   école
+matches
+           ipa  distance
+orig                   
+caw       kɔˈ         2
+ale      ejˈl         2
+kall     kɔˈl         2
+caul(1)  kɔˈl         2
+call     kɔˈl         2
+ail      ejˈl         2
+kaul     kɔˈl         2
+lille    lɪˈl         3
+lill     lɪˈl         3
+cele     siˈl         3
+
+
+source_word:   voyage
+matches
+              ipa  distance
+orig                      
+dwight    dwajˈt         3
+wine       wajˈn         3
+while      wajˈl         3
+twine     twajˈn         3
+weisz      vajˈʃ         3
+whyte(1)  hwajˈt         3
+schwier   ʃwajˈɚ         3
+weiss      wajˈs         3
+dwire     dwajˈɹ         3
+wile       wajˈl         3
+
+
+source_word:   livre
+matches
+             ipa  distance
+orig                     
+lieb       liˈb         2
+league     liˈg         2
+leet       liˈt         2
+lee         liˈ         2
+leap       liˈp         2
+lever(1)  liˈvɚ         2
+levie     liˈvi         2
+leaves    liˈvz         2
+liese      liˈz         2
+leas       liˈz         2
+
+
+source_word:   lumière
+matches
+              ipa  distance
+orig                      
+lemieux   lʌmjuˈ         3
+lawyers'  lɔˈjɚz         4
+lebeck    liˈbɛk         4
+lamotte   lʌmɔˈt         4
+ahmed(1)   ɑˈmɛd         4
+lemaire   lʌmɛˈɹ         4
+lime       lajˈm         4
+laib       lejˈb         4
+life       lajˈf         4
+lorain    lɚejˈn         4
+
+
+source_word:   phrase
+matches
+          ipa  distance
+orig                  
+firs    fɚˈz         2
+fuzz    fʌˈz         2
+faas    fɑˈz         2
+faus    fɔˈz         2
+fizz    fɪˈz         2
+fez     fɛˈz         2
+feese   fiˈz         2
+fors    fɚˈz         2
+foos    fuˈz         2
+furr's  fɚˈz         2
+
+
+
+hamming_feature_edit_distance
+
+
+
+time to run 0:00:16.636438 for word |||   Авдей    |||IPA avˈdʲɛj
+time to sort 0:00:00.016003 for word |||   Авдей    |||IPA avˈdʲɛj
+time to run 0:00:04.245268 for word |||   Алла    |||IPA А́лла
+time to sort 0:00:00.008865 for word |||   Алла    |||IPA А́лла
+time to run 0:00:16.696775 for word |||   порез    |||IPA pɐˈrʲes
+time to sort 0:00:00.013536 for word |||   порез    |||IPA pɐˈrʲes
+time to run 0:00:03.928092 for word |||   узус    |||IPA ˈ
+time to sort 0:00:00.008975 for word |||   узус    |||IPA ˈ
+time to run 0:00:16.594806 for word |||   уксус    |||IPA ˈuksʊs
+time to sort 0:00:00.013616 for word |||   уксус    |||IPA ˈuksʊs
+time to run 0:00:19.272371 for word |||   дерево    |||IPA ˈdʲerʲɪvə
+time to sort 0:00:00.014398 for word |||   дерево    |||IPA ˈdʲerʲɪvə
+time to run 0:00:26.793117 for word |||   Александр    |||IPA ɐlʲɪˈksandr
+time to sort 0:00:00.015190 for word |||   Александр    |||IPA ɐlʲɪˈksandr
+
+
+source_word:   Авдей
+matches
+               ipa  distance
+orig                       
+jaffray   ʤæˈfɹej  0.291667
+avdel     æˈvdɛˌl  0.291667
+everding  ɛˈvɚdɪŋ  0.333333
+alday      æˈldej  0.333333
+abdel     æˈbdɛˌl  0.375000
+iptay      ɪˈptej  0.375000
+abdo       æˈbdow  0.375000
+averting  ʌvɚˈtɪŋ  0.375000
+altai      æltajˈ  0.416667
+amboy      æˈmbɔj  0.416667
+
+
+source_word:   Алла
+matches
+            ipa  distance
+orig                    
+or(1)        ɚ         0
+eure        ɚˈ         0
+er           ɚ         0
+err(1)      ɚˈ         0
+church    ʧɚˈʧ         0
+jerr       ʤɚˈ         0
+gerger   gɚˈgɚ         0
+gurr       gɚˈ         0
+jerger   ʤɚˈgɚ         0
+gertsch   gɚˈʧ         0
+
+
+source_word:   порез
+matches
+                    ipa  distance
+orig                            
+police          pʌliˈs  0.208333
+possess         pʌzɛˈs  0.208333
+possessor      pʌzɛˈsɚ  0.208333
+herbalists(2)  ɚˈbʌlʌs  0.250000
+buzzy's         bʌˈziz  0.291667
+palash          pʌlæˈʃ  0.291667
+felice          fʌliˈs  0.291667
+palace          pæˈlʌs  0.291667
+pallas          pæˈlʌs  0.291667
+falise          fʌliˈs  0.291667
+
+
+source_word:   узус
+matches
+            ipa  distance
+orig                    
+or(1)        ɚ         0
+eure        ɚˈ         0
+err(1)      ɚˈ         0
+church    ʧɚˈʧ         0
+gerger   gɚˈgɚ         0
+gurr       gɚˈ         0
+jerr       ʤɚˈ         0
+gertsch   gɚˈʧ         0
+are(1)       ɚ         0
+ur          ɚˈ         0
+
+
+source_word:   уксус
+matches
+                ipa  distance
+orig                        
+excess(1)   ɪksɛˈs  0.291667
+access     æˈksɛˌs  0.333333
+x.'s        ɛˈksɪz  0.333333
+axis        æˈksʌs  0.333333
+excess     ɛˈksɛˌs  0.333333
+exeter     ɛˈksɪtɚ  0.333333
+exes        ɛˈksɪz  0.333333
+x's         ɛˈksɪz  0.333333
+axes        æˈksɪz  0.333333
+x.s         ɛˈksɪz  0.333333
+
+
+source_word:   дерево
+matches
+                 ipa  distance
+orig                         
+knezevich  nɛˈzɪvɪʧ  0.416667
+delivery   dɪlɪˈvɚi  0.416667
+talitha     tæˈlɪðʌ  0.500000
+delima      dɛliˈmʌ  0.500000
+sedivy      sɛˈdɪvi  0.500000
+delisa      dɛliˈsʌ  0.541667
+khalifa     kʌliˈfʌ  0.541667
+larivee     læˈɹɪvi  0.541667
+dilemma     dɪlɛˈmʌ  0.541667
+larrivee    læˈɹɪvi  0.541667
+
+
+source_word:   Александр
+matches
+                       ipa  distance
+orig                               
+assistants     ʌsɪˈstʌnts  0.833333
+quicksands    kwɪˈksæˌndz  0.875000
+assailant's    ʌsejˈlʌnts  0.958333
+assailants     ʌsejˈlʌnts  0.958333
+ellipsoids     ɪlɪˈpsɔjdz  1.000000
+electioneer   ɪlɛˌkʃʌnɪˈɹ  1.000000
+alibrandi     æˌlɪbɹæˈndi  1.000000
+attendants'    ʌtɛˈndʌnts  1.041667
+understands  ʌˌndɚstæˈndz  1.041667
+attendants     ʌtɛˈndʌnts  1.041667
+time to run 0:00:11.666509 for word |||   femme    |||IPA fam
+time to sort 0:00:00.015157 for word |||   femme    |||IPA fam
+time to run 0:00:08.999645 for word |||   homme    |||IPA ɔm
+time to sort 0:00:00.012228 for word |||   homme    |||IPA ɔm
+time to run 0:00:11.459618 for word |||   ami    |||IPA ami
+time to sort 0:00:00.012785 for word |||   ami    |||IPA ami
+time to run 0:00:14.091265 for word |||   maison    |||IPA mɛzɔ̃
+time to sort 0:00:00.013270 for word |||   maison    |||IPA mɛzɔ̃
+time to run 0:00:11.576930 for word |||   monde    |||IPA mɔ̃d
+time to sort 0:00:00.012989 for word |||   monde    |||IPA mɔ̃d
+time to run 0:00:19.081509 for word |||   travail    |||IPA tʁavaj
+time to sort 0:00:00.013598 for word |||   travail    |||IPA tʁavaj
+time to run 0:00:14.010125 for word |||   école    |||IPA ekɔl
+time to sort 0:00:00.014146 for word |||   école    |||IPA ekɔl
+time to run 0:00:19.055869 for word |||   voyage    |||IPA vwajaʒ
+time to sort 0:00:00.013804 for word |||   voyage    |||IPA vwajaʒ
+time to run 0:00:14.008474 for word |||   livre    |||IPA livʁ
+time to sort 0:00:00.014134 for word |||   livre    |||IPA livʁ
+time to run 0:00:19.043408 for word |||   lumière    |||IPA lymjɛʁ
+time to sort 0:00:00.013742 for word |||   lumière    |||IPA lymjɛʁ
+time to run 0:00:14.022848 for word |||   phrase    |||IPA fʁaz
+time to sort 0:00:00.014103 for word |||   phrase    |||IPA fʁaz
+
+
+source_word:   femme
+matches
+             ipa  distance
+orig                     
+pham       fæˈm  0.000000
+pam        pæˈm  0.083333
+fab        fæˈb  0.083333
+faberge  fæˈbɚʤ  0.083333
+femme      fɛˈm  0.083333
+femur     fiˈmɚ  0.083333
+phan       fæˈn  0.125000
+fan        fæˈn  0.125000
+fann       fæˈn  0.125000
+bam        bæˈm  0.125000
+
+
+source_word:   homme
+matches
+           ipa  distance
+orig                   
+auber    ɔˈbɚ  0.083333
+m.        ɛˈm  0.083333
+m         ɛˈm  0.083333
+aube      ɔˈb  0.083333
+gum      gʌˈm  0.083333
+jem      ʤɛˈm  0.083333
+i'm(1)     ʌm  0.083333
+gemmer  gɛˈmɚ  0.083333
+emge     ɛˈmʤ  0.083333
+em        ɛˈm  0.083333
+
+
+source_word:   ami
+matches
+             ipa  distance
+orig                     
+amie       æˈmi  0.000000
+amery     æˈmɚi  0.000000
+gammage  gæˈmɪʤ  0.041667
+gamage   gæˈmɪʤ  0.041667
+emmi       ɛˈmi  0.083333
+emmy       ɛˈmi  0.083333
+arabie    ɚæˈbi  0.083333
+abby       æˈbi  0.083333
+abbe       æˈbi  0.083333
+abbie      æˈbi  0.083333
+
+
+source_word:   maison
+matches
+                 ipa  distance
+orig                         
+meddaugh      mɛˈdɔ  0.083333
+middaugh      mɪˈdɔ  0.125000
+meza          mɛˈzʌ  0.125000
+messa         mɛˈsʌ  0.166667
+message      mɛˈsʌʤ  0.166667
+mazza         mæˈzʌ  0.208333
+marella      mɚɛˈlʌ  0.208333
+missouri(1)  mʌzɚˈʌ  0.208333
+mella         mɛˈlʌ  0.208333
+misa          miˈzʌ  0.208333
+
+
+source_word:   monde
+matches
+              ipa  distance
+orig                      
+maude       mɔˈd  0.041667
+maraud     mɚɔˈd  0.041667
+marauder  mɚɔˈdɚ  0.041667
+maud        mɔˈd  0.041667
+mod         mɔˈd  0.041667
+maute       mɔˈt  0.083333
+maus        mɔˈz  0.083333
+marotte    mɚɔˈt  0.083333
+medar      mɛˈdɚ  0.125000
+med         mɛˈd  0.125000
+
+
+source_word:   travail
+matches
+                  ipa  distance
+orig                          
+certify    sɚˈtʌfajˌ  0.416667
+deify       diˈʌfajˌ  0.458333
+scavo        skɑˈvow  0.500000
+stegmaier  stɛˈgmajɚ  0.541667
+scavenge    skæˈvʌnʤ  0.541667
+scavenger  skæˈvʌnʤɚ  0.541667
+spavo        spɑˈvow  0.583333
+scovill      skɑˈvʌl  0.583333
+scovell      skɑˈvʌl  0.583333
+skibo(1)     skiˈbow  0.583333
+
+
+source_word:   école
+matches
+             ipa  distance
+orig                     
+jekyll   ʤɛˈkʌl     0.125
+eckerle  ɛˈkɚʌl     0.125
+akel      ʌkɛˈl     0.125
+chuckle  ʧʌˈkʌl     0.125
+eckel     ɛˈkʌl     0.125
+jekel    ʤɛˈkʌl     0.125
+jackel   ʤæˈkʌl     0.125
+jackal   ʤæˈkʌl     0.125
+jakel    ʤæˈkʌl     0.125
+eakle     iˈkʌl     0.125
+
+
+source_word:   voyage
+matches
+                 ipa  distance
+orig                         
+bryan       bɹajˈʌn  0.541667
+quieter    kwajˈʌtɚ  0.541667
+bryen       bɹajˈʌn  0.541667
+gyi(1)   ʤiˈwajˈajˈ  0.541667
+quiet       kwajˈʌt  0.541667
+brian       bɹajˈʌn  0.541667
+bryon       bɹajˈʌn  0.541667
+brion       bɹajˈʌn  0.541667
+triad      tɹajˈæˌd  0.541667
+priam      pɹajˈæˌm  0.583333
+
+
+source_word:   livre
+matches
+              ipa  distance
+orig                      
+leaves     liˈvz  0.166667
+leaver's  liˈvɚz  0.166667
+gleaves   gliˈvz  0.166667
+livers    lɪˈvɚz  0.208333
+lives      lɪˈvz  0.208333
+leiva      liˈvʌ  0.208333
+loves      lʌˈvz  0.250000
+gloves    glʌˈvz  0.250000
+lived(1)   lɪˈvd  0.250000
+levers    lɛˈvɚz  0.250000
+
+
+source_word:   lumière
+matches
+                    ipa  distance
+orig                            
+soonyi's      suˌnjiˈz  0.541667
+linwick       lɪˈnwɪˌk  0.541667
+lengyel       lɛˈŋjɛˌl  0.583333
+libya's        lɪˈbiʌz  0.583333
+lenius         liˈniɪs  0.583333
+labrecque      lʌbɹɛˈk  0.583333
+lumberjack  lʌˈmbɚʤæˌk  0.625000
+damaging      dæˈmɪʤɪŋ  0.625000
+limbaugh's    lɪˈmbɔˌz  0.625000
+tubular       tuˈbjʌlɚ  0.625000
+
+
+source_word:   phrase
+matches
+              ipa  distance
+orig                      
+forbad    fɚbæˈd  0.208333
+flags     flæˈgz  0.250000
+furches   fɚʃiˈz  0.250000
+skaggs    skæˈgz  0.291667
+forgette  fɚʒɛˈt  0.291667
+furash    fjɚæˈʃ  0.291667
+scags     skæˈgz  0.291667
+scaggs    skæˈgz  0.291667
+firkus    fɚˈkɪs  0.291667
+fervid    fɚˈvʌd  0.291667
+
+Process finished with exit code 0
