@@ -18,6 +18,21 @@ def get_russian_words_for_test():
     return words_list
 
 
+def get_spanish_words_for_test():
+    words_list = ["abane", "malo", "mujer", "hombre", "ciudad", "partir", "feliz"]
+    return words_list
+
+
+def get_german_words_for_test():
+    words_list = ["werden", "zwei", "zwischen", "sagte", "Netzwerk", "zurecht", "geschieht"]
+    return words_list
+
+
+def get_esperanto_words_for_test():
+    words_list = ["viro", "doni", "knabo", "geodo", "kapo", "lernejo", "arbo"]
+    return words_list
+
+
 def print_matches(source_words, matches):
     for i in range(len(source_words)):
         print('\n\nsource_word:  ', source_words[i])
@@ -35,6 +50,12 @@ def get_words_for_test(lang='english'):
         return get_french_words_for_test()
     elif lang == 'ru':
         return get_russian_words_for_test()
+    elif lang == 'spanish':
+        return get_spanish_words_for_test()
+    elif lang == 'esperanto':
+        return get_esperanto_words_for_test()
+    elif lang == 'german':
+        return get_german_words_for_test()
     pass
 
 
@@ -53,6 +74,7 @@ def get_distance_function(name=""):
 
 
 def generic_test(dst_function="", lang='english'):
+    print(f'start test of {lang} with {dst_function}')
     dst_function = get_distance_function(dst_function)
     source_words = get_words_for_test(lang=lang)
     matches = matcher.calc_matches(source_words, dst_function, lang=lang)
@@ -91,8 +113,12 @@ def run_few_languages_test():
 
 
 if __name__ == '__main__':
-    generic_test(dst_function="", lang='ru')
+    generic_test(dst_function="", lang='esperanto')
+    generic_test(dst_function="", lang='german')
+    generic_test(dst_function="", lang='spanish')
     generic_test(dst_function="", lang='french')
+    exit()
+    generic_test(dst_function="", lang='ru')
 
     print("\n\n\nfeature_edit_distance\n\n\n")
     generic_test(dst_function="feature_edit_distance", lang='ru')
