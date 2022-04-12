@@ -20,7 +20,7 @@ ipa.columns = ["orig", "ipa"]
 ipa = ipa.set_index("orig")
 ipa = ipa.dropna()
 
-myfile = open("english.csv" if False else "4and5_pairs_english_ipa.txt", encoding='utf-8')
+myfile = open("english.csv" if False else r"data\freq_english_ipa.txt", encoding='utf-8')
 en_ipa = pandas.read_csv(myfile, encoding='utf-8', header=None,usecols=range(2))
 en_ipa.columns = ["orig", "ipa"]
 en_ipa = en_ipa.set_index("orig")
