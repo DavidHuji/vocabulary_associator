@@ -15,7 +15,8 @@ def generate_sentance(word_1, word_2,prompt=CONTEXT_PROMPT):
       max_tokens=256,
       top_p=1,
       frequency_penalty=0,
-      presence_penalty=0
+      presence_penalty=0,
+      stop='\n'
     )
 
     sentence = response['choices'][0]['text']
