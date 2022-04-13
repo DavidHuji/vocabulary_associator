@@ -2,7 +2,7 @@ import os
 import openai
 
 openai.api_key = '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'
-CONTEXT_PROMPT = "Use the words: ({},{}) in one short sentence (no more than 10 words)."
+CONTEXT_PROMPT = "(bank, bench) -> a *bench* near a *bank*\n(chair, person) -> a *person* sitting on a *chair* \n(car, tree) -> the *car* parks near the *tree*\n(women, tree) -> a *woman* holds Christmas *tree*\n(car, flower) -> there is a *flower* inside the *car* \n(wave, grass) -> the wind makes the *grass* move like *waves* \n(money, water) -> *water* is *money* in the future \n(Google, chair) -> *Google* has a *chair* in its office \n({},{})->"
 
 def score_matches_with_clip(images, text):
     pass
@@ -20,7 +20,7 @@ def generate_sentance(word_1, word_2,prompt=CONTEXT_PROMPT):
     )
 
     sentence = response['choices'][0]['text']
-    return sentence
+    return sentence.replace('*', '')
 
 
 def try_many(word_1,word_2):
