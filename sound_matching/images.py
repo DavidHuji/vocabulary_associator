@@ -3,7 +3,7 @@ from pathlib import Path
 import os
 import slugify
 
-def generate_image(sentence,max_num=4):
+def generate_image(sentence, max_num=4):
     Path("./examples").mkdir(parents=True, exist_ok=True)
     Path("./downloaded").mkdir(parents=True, exist_ok=True)
     
@@ -17,8 +17,11 @@ def generate_image(sentence,max_num=4):
     google_Crawler = GoogleImageCrawler(storage={'root_dir': images_dir})
     google_Crawler.crawl(keyword=sentence, max_num=max_num)
 
-    images_path_arr = os.listdir(images_dir)
-    images_path_arr = [os.path.join(images_dir,x) for x in images_path_arr]
+    images_path_arr = []
+    if os.path.exists(images_dir):
+        images_path_arr = os.listdir(images_dir)
+        images_path_arr = [os.path.join(images_dir, x) for x in images_path_arr]
+        print("Images are saved in {}".format(images_dir))
     return images_path_arr
     
 if __name__ == '__main__':

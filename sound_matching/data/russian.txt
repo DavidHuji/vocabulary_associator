@@ -3,3 +3,23 @@
 уксус, ˈuksus
 дерево,ˈdʲerʲɪvə
 Александр,ɐlʲɪkˈsandr
+время,Vremya
+год,god
+люди,lyudi
+путь,put'
+день,den'
+мужчина,muzhchina
+вещь,veshch'
+женщина,zhenshchina
+жизнь,zhizn'
+ребенок,rebenok
+мир,mir
+школа,shkola
+государство,strana
+семья,Sem'ya
+ученик,Student
+группа,Gruppa
+страна,Strana
+проблема,Problema
+рука,Ruka
+часть,Chast

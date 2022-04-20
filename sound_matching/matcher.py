@@ -38,6 +38,8 @@ def get_ipa_tables(lang='english'):
             filename = "data/hebrew.txt"
         elif lang == "korean":
             filename = "data/korean.txt"
+        elif lang == "arabic":
+            filename = "data/arabic.txt"
         myfile = open(filename, encoding='utf-8')
         ipa = pandas.read_csv(myfile, encoding='utf-8', header=None, usecols=range(2))
         ipa.columns = ["orig", "ipa"]
@@ -55,8 +57,9 @@ def calc_matches(source_words, dst_function, lang='english'):
 
     for src_word in source_words:
         src_phonim = source_ipa.loc[src_word].values[0]
+        src_phonim = src_phonim if (type(src_phonim) is str) else src_phonim[0]
         soundex_src_word = IPA_soundex.convert(src_phonim)
-
+        print(src_word, src_phonim, soundex_src_word)
         #a = datetime.datetime.now()
         en_ipa['distance'] = en_ipa.apply(lambda row: dst_function(src_phonim, row['ipa']), axis=1)
         en_ipa['distance_soundex'] = en_ipa.apply(lambda row : dst.fast_levenshtein_distance(soundex_src_word, row["soundex"]), axis = 1)

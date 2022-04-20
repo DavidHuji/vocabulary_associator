@@ -1,7 +1,7 @@
 import os
 import openai
 
-openai.api_key = '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'
+openai.api_key = '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'
 CONTEXT_PROMPT = "(bank, bench) -> a *bench* near a *bank*\n(chair, person) -> a *person* sitting on a *chair* \n(car, tree) -> the *car* parks near the *tree*\n(women, tree) -> a *woman* holds Christmas *tree*\n(car, flower) -> there is a *flower* inside the *car* \n(wave, grass) -> the wind makes the *grass* move like *waves* \n(money, water) -> *water* is *money* in the future \n(Google, chair) -> *Google* has a *chair* in its office \n({},{})->"
 
 def score_matches_with_clip(images, text):

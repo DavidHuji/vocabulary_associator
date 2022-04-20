@@ -1,7 +1,11 @@
 import matcher, gpt3, images
 from pathlib import Path
 import datetime
-# import weasyprint
+from data.words_for_test import get_top_20nouns_test
+
+
+USE_TOP_20_NOUNS = True
+
 
 def english_test_with_translation():
     orig = ["kiwi","something", "tear", "informed", "chair", "sky", "cat", "sun"]
@@ -9,45 +13,64 @@ def english_test_with_translation():
 
 
 def korean_test_with_translation():
-    orig = ["오늘", "지금", "년"]
-    trans = ["Today", "Now", "Year"]
-    return orig, trans
+    orig = ["오늘", "년", "주", "초", "시계", "가다", "웃다", "보다", "멀리", "작은"]
+    trans = ["Today", "Year", 'week', 'second', 'clock', "go", 'laugh', "see", "far", "small"]
+    challenging_words = ["사용하다", "만들다", "못생긴"]
+    challenging_trans = ["use", "make", "ugly"]
+    return orig + challenging_words, trans + challenging_trans
+
 
 def french_test_with_translation():
-    orig = ["baguette","avoir", "pas", "pouvoir", "son", "dire", "devoir", "avant", "deux", "bien",
-            "fois", "nouveau", "vouloir", "moins", "temps", "savoir", "raison", "monde",
-            "jour", "monsieur"]
-    trans = ["bread","have", "not", "can", "sound", "say", "should", "before", "two", "well",
-             "times", "new", "want", "less", "time", "know", "reason", "world",
-             "day", "sir"]
-    return orig, trans
+    orig = ["baguette", "dire", "rire", "petit", "belle", "monde", "jour", "bon", "seul", "fille", "ami", "argent"]
+    trans = ["bread", "say", "laugh", "small", "beautiful", "world", "day", "good", "alone", "daughter", "friend", "money"]
+    challenging_words = ["avoir", "pas", "pouvoir", "son"]
+    challenging_trans = ["have", "not", "can", "sound"]
+    return orig + challenging_words, trans + challenging_trans
+
 
 def hebrew_test_with_translation():
-    orig = ["שקד", "שלג", "במקום", "גלויה", "גרון", "זהב", "כתיבה", "עיר", "סוס"]
-    trans = ["almond","snow", "instead", "postcard", "throat", "gold", "writing", "city", "hourse"]
-    return orig, trans
+    orig = ["גרון", "עיר", "סוס", "ילד", "מקרר", "כיסא", "כלב"]
+    trans = ["throat", "city", "hourse", "boy", "fridge", "chair", "dog"]
+    challenging_words = ["שקד", "שלג", "במקום", "גלויה", "זהב", "כתיבה"]
+    challenging_trans = ["almond","snow", "instead", "postcard", "gold", "writing"]
+    return orig + challenging_words, trans + challenging_trans
+
 
 def russian_test_with_translation():
     orig = ["мужчина", "порез", "уксус", "дерево", "Александр"]
     trans = ["male", "cut", "viniger", "tree", "alexander"]
-    return orig, trans
+    challenging_words = []
+    challenging_trans = []
+    return orig + challenging_words, trans + challenging_trans
+
 
 def spanish_test_with_translation():
     orig = ["abane", "malo", "mujer", "hombre", "ciudad", "partir", "feliz"]
     trans =["abandon", "bad", "woman", "man", "city", "depart", "happy"]
-    return orig, trans
+    challenging_words = []
+    challenging_trans = []
+    return orig + challenging_words, trans + challenging_trans
+
 
 def german_test_with_translation():
     orig = ["werden", "zwei", "zwischen", "sagte", "Netzwerk", "zurecht", "geschieht"]
     trans = ["become", "two", "between", "said", "network", "rightly", "happens"]
-    return orig, trans
+    challenging_words = []
+    challenging_trans = []
+    return orig + challenging_words, trans + challenging_trans
+
 
 def esperanto_test_with_translation():
     orig = ["viro", "doni", "knabo", "kapo", "lernejo", "arbo"]
     trans = ["man", "give", "boy", "head", "school", "tree"]
-    return orig, trans
+    challenging_words = []
+    challenging_trans = []
+    return orig + challenging_words, trans + challenging_trans
+
 
 def get_words_for_test(lang='english'):
+    if USE_TOP_20_NOUNS:
+        return get_top_20nouns_test(lang)
     if lang == 'english':
         return english_test_with_translation()
     elif lang == 'french':
@@ -154,7 +177,7 @@ def run_few_languages_test(languages=["english", "russian", "french", "spanish",
 
 
 if __name__ == '__main__':
-    run_few_languages_test(["korean", "hebrew", "english", "french", "russian", "spanish", "esperanto", "german"],
+    run_few_languages_test(["german", "french", "spanish", "korean", "russian", "arabic", "esperanto", "english"], #"hebrew",
                            gen_sentence=True, gen_image=True)
     exit()
     print("\n\n\nfeature_edit_distance\n\n\n")
