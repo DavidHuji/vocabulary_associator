@@ -177,7 +177,7 @@ def run_few_languages_test(languages=["english", "russian", "french", "spanish",
 
 
 if __name__ == '__main__':
-    run_few_languages_test(["german", "french", "spanish", "korean", "russian", "arabic", "esperanto", "english"], #"hebrew",
+    run_few_languages_test(["hebrew", "arabic", "german", "french", "spanish", "korean", "russian", "esperanto", "english"], #
                            gen_sentence=True, gen_image=True)
     exit()
     print("\n\n\nfeature_edit_distance\n\n\n")
