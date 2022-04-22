@@ -131,9 +131,10 @@ def image_to_pdf(log_filename):
 def generic_test(dst_function="weighted_feature_edit_distance", lang='english',
                  gen_sentence=True, gen_image=False, max_matches=3, log_filename=generate_file_name()):
 
-    log_to_file(f'<h1>start test of {lang.upper()} with {dst_function}, \n'\
-                f'generate sentence = {gen_sentence}, generate image = {gen_image}\n'
-                f'file {log_filename}</h1>\n', log_filename)
+
+    # log_to_file(f'<h1>start test of {lang.upper()} with {dst_function}, \n'\
+    #             f'generate sentence = {gen_sentence}, generate image = {gen_image}\n'
+    #             f'file {log_filename}</h1>\n', log_filename)
 
     dst_function = get_distance_function(dst_function)
     src_words_arr, translations_arr = get_words_for_test(lang)
@@ -142,30 +143,41 @@ def generic_test(dst_function="weighted_feature_edit_distance", lang='english',
 
     for src_word, src_phonim, src_soundex, matches, translation in \
                     zip(src_words_arr, src_phonim_arr, src_soundex_arr, matches, translations_arr):
-        log_to_file(f"<h2>word |||  {src_word}   ||| IPA {src_phonim}  |||  soundex {src_soundex}</h2>", log_filename)
+
+        page_start = """<p style="page-break-after: always;">&nbsp;</p>"""
+        page_end   = """<p style="page-break-before: always;">&nbsp;</p>"""
+        
+        log_to_file("Word in {} : {}| English Translation : {}".format(lang , src_word, translation) , log_filename)
+        # log_to_file(f"<h2>word |||  {src_word}   ||| IPA {src_phonim}  |||  soundex {src_soundex}</h2>", log_filename)
         log_to_file("Words that sound similar in english (best matches):" +
                     matches.to_html().replace('\n', '')+"\n", log_filename)
         print(matches)
-
+        log_to_file(page_start , log_filename)
         if gen_sentence:
             sounds_like_arr = matches.head(max_matches).index.values
-            for sounds_like in sounds_like_arr:
+            for idx , sounds_like in enumerate(sounds_like_arr):
 
                 sentence = gpt3.generate_sentance(sounds_like, translation)
-
-                log_to_file(f'<h3>{lang}:{src_word},'
-                            f'means:{translation},'
-                            f'sounds like:{sounds_like}. </h3> \n'
-                            f'sentence:<h3>{sentence}</h3>', log_filename)
+                
+                log_to_file("The word {} in {} which have a meaning of {}, sounds like {} in speaking (candidate #{}) \n".format(src_word , lang , translation , sounds_like , str(idx)) , log_filename)
+                log_to_file("A GPT3 generated sentence with the combination of the two words <b>{}</b> and <b>{}</b> is <b>{}</b>".format(translation , sounds_like , sentence) , log_filename)
+                # log_to_file(f'<h3>{lang}:{src_word},'
+                #             f'means:{translation},'
+                #             f'sounds like:{sounds_like}. </h3> \n'
+                #             f'sentence:<h3>{sentence}</h3>', log_filename)
 
                 if gen_image:
                     images_path_arr = images.generate_image(sentence,max_num=1)
+                    
                     for image_path in images_path_arr:
-                        log_to_file("Image", log_filename)
-                        log_to_file("generated images in path:\n"+image_path, log_filename)
-                        log_to_file(f'<img src="{image_path}" style="max-width:30%">', log_filename)
+                        log_to_file("A genereated image of the sentence <b>{}</b> from google images : ".format(sentence), log_filename)
+                        # log_to_file("generated images in path:\n"+image_path, log_filename)
+                        log_to_file(f'<img src="{image_path}" width="300" height="300">', log_filename)
+                        # log_to_file(f'<hr size="8" width="90%" color="black">  ', log_filename)   
+                    log_to_file(page_end , log_filename)  
 
     image_to_pdf(log_filename)
+
 
 def run_few_languages_test(languages=["english", "russian", "french", "spanish", "esperanto", "german"],
                            gen_sentence=True, gen_image=False):
@@ -177,6 +189,7 @@ def run_few_languages_test(languages=["english", "russian", "french", "spanish",
 
 
 if __name__ == '__main__':
+
     run_few_languages_test(["hebrew", "arabic", "german", "french", "spanish", "korean", "russian", "esperanto", "english"], #
                            gen_sentence=True, gen_image=True)
     exit()
