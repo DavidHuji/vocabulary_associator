@@ -78,8 +78,6 @@ def generate_image(sentence, max_num=4):
         if img != none_meme:
             os.system('rm {}'.format(img))
     images_path_arr = [none_meme]
-    print(images_path_arr)
-    exit(-1)
     return images_path_arr
     
 if __name__ == '__main__':
