@@ -1,1 +1,0 @@
-from gpt3 import gen_sentence_and_image

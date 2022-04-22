@@ -2,17 +2,20 @@ import os
 import openai
 
 openai.api_key = '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'
-CONTEXT_PROMPT = "(bank, bench) -> a *bench* near a *bank*\n(chair, person) -> a *person* sitting on a *chair* \n(car, tree) -> the *car* parks near the *tree*\n(women, tree) -> a *woman* holds Christmas *tree*\n(car, flower) -> there is a *flower* inside the *car* \n(wave, grass) -> the wind makes the *grass* move like *waves* \n(money, water) -> *water* is *money* in the future \n(Google, chair) -> *Google* has a *chair* in its office \n({},{})->"
+openai.api_key = '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'
+CONTEXT_PROMPT = "(bank, bench) -> a *bench* near a *bank*\n(chair, person) -> a *person* sitting on a *chair* \n(car, tree) -> the *car* parks near the *tree*\n(women, tree) -> a *woman* holds Christmas *tree*\n(car, flower) -> there is a *flower* inside the *car* \n(wave, grass) -> the wind makes the *grass* move like *waves* \n(money, water) -> *water* is *money* in the future \n(Google, chair) -> *Google* has a *chair* in its office \n({}, {}) ->"
+
 
 def score_matches_with_clip(images, text):
     pass
 
+
 def generate_sentance(word_1, word_2,prompt=CONTEXT_PROMPT):
     response = openai.Completion.create(
       engine="text-davinci-002",
-      prompt=prompt.format(word_1,word_2),
+      prompt=prompt.format(word_1, word_2),
       temperature=0.7,
-      max_tokens=256,
+      max_tokens=100,
       top_p=1,
       frequency_penalty=0,
       presence_penalty=0,
@@ -25,7 +28,7 @@ def generate_sentance(word_1, word_2,prompt=CONTEXT_PROMPT):
 
 def try_many(word_1,word_2):
     prompt_arr =["(bank, bench) -> a bench near a bank\n(chair, person) -> a person sitting on a chair \n(to go, dog) -> the dog goes near the house\n(car, tree) -> the car parks near the tree\n(women, tree) -> a woman holds Christmas tree\n(car, flower) -> there is a flower inside the car \n(wave, grass) -> the wind makes the grass move like waves\n(Money, water) -> water is money in the future\n(Google, chair) -> Google has a chair in its office\n({}, {}) ->",
-                "(bank, bench) -> a *bench* near a *bank*\n(chair, person) -> a *person* sitting on a *chair* \n(car, tree) -> the *car* parks near the *tree*\n(women, tree) -> a *woman* holds Christmas *tree*\n(car, flower) -> there is a *flower* inside the *car* \n(wave, grass) -> the wind makes the *grass* move like *waves* \n(money, water) -> *water* is *money* in the future \n(Google, chair) -> *Google* has a *chair* in its office \n({},{})->",
+                "(bank, bench) -> a *bench* near a *bank*\n(chair, person) -> a *person* sitting on a *chair* \n(car, tree) -> the *car* parks near the *tree*\n(women, tree) -> a *woman* holds Christmas *tree*\n(car, flower) -> there is a *flower* inside the *car* \n(wave, grass) -> the wind makes the *grass* move like *waves* \n(money, water) -> *water* is *money* in the future \n(Google, chair) -> *Google* has a *chair* in its office \n({}, {}) ->",
                 "Use the words: ({},{}) in one sentence.",
                  "Use the words: ({},{}) in one funny sentence.",
                  "Use the words: ({},{}) in one catchy sentence.",

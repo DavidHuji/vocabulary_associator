@@ -125,11 +125,9 @@ def image_to_pdf(log_filename):
     with open(html_path, 'w', encoding='utf-8') as file:
         file.write(filedata)
 
-    # weasyprint.HTML(html_path).write_pdf(pdf_path)
-
 
 def generic_test(dst_function="weighted_feature_edit_distance", lang='english',
-                 gen_sentence=True, gen_image=False, max_matches=3, log_filename=generate_file_name()):
+                 gen_sentence=True, gen_image=False, max_matches=2, log_filename=generate_file_name()):
 
 
     # log_to_file(f'<h1>start test of {lang.upper()} with {dst_function}, \n'\
@@ -156,7 +154,6 @@ def generic_test(dst_function="weighted_feature_edit_distance", lang='english',
         if gen_sentence:
             sounds_like_arr = matches.head(max_matches).index.values
             for idx , sounds_like in enumerate(sounds_like_arr):
-
                 sentence = gpt3.generate_sentance(sounds_like, translation)
                 
                 log_to_file("The word {} in {} which have a meaning of {}, sounds like {} in speaking (candidate #{}) \n".format(src_word , lang , translation , sounds_like , str(idx)) , log_filename)
@@ -189,8 +186,7 @@ def run_few_languages_test(languages=["english", "russian", "french", "spanish",
 
 
 if __name__ == '__main__':
-
-    run_few_languages_test(["hebrew", "arabic", "german", "french", "spanish", "korean", "russian", "esperanto", "english"], #
+    run_few_languages_test(["hebrew", "arabic", "german", "french", "spanish", "korean", "russian", "esperanto", "english"],
                            gen_sentence=True, gen_image=True)
     exit()
     print("\n\n\nfeature_edit_distance\n\n\n")

@@ -1,4 +1,7 @@
 import pandas
+
+# filter the ipa english file to only contain the top 10k popular words
+
 freq_words_whitelist_file = 'data/popular_words10000.txt'
 short_words_whitelist_file = 'data/short_ipa.txt'
 myfile = open("data/en_US.txt", encoding='utf-8')
