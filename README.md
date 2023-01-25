@@ -4,7 +4,7 @@ Visual associations generator for accelerating foreign vocabulary acquisition. P
 ![Components:](https://github.com/DavidHuji/vocabulary_associator/blob/main/scheme.png)
 
 ## Example of output
-![Components:](https://github.com/DavidHuji/vocabulary_associator/blob/main/example.png)
+![Components:](https://github.com/DavidHuji/vocabulary_associator/blob/main/example1.png)
 
 
 ## Running
