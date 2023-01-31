@@ -1,5 +1,5 @@
 # Vocabulary Associator
-Visual associations generator for accelerating foreign vocabulary acquisition. Please read the attached report.pdf file for full description.
+Visual associations generator for accelerating foreign vocabulary acquisition. Please read the attached report.pdf file for full description. [Here](https://drive.google.com/file/d/18gzCkD_3G1PJNoR7VbM-gyS_edcEWMlC/view) there are 500 pages of output examples accross 8 different languages.
 
 ![Components:](https://github.com/DavidHuji/vocabulary_associator/blob/main/scheme.png)
 
